@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <p id="demo"></p>
+    <script>
+        // let circle=[10,20,30];
+        // let areas=[];
+        // let area=0;
+        // for(let i=0;i<circle.length;i++){
+        //     area=Math.floor(Math.PI*circle[i]*circle[i])
+        //     // document.getElementById('demo').innerHTML=area;
+        //     // break;
+        //     areas.push(area)
+        // }
+        // document.getElementById('demo').innerHTML=areas
+        // console.log(areas);
+
+        // let areas=circle.map((radius)=>(
+        //     Math.floor(Math.PI*radius*radius)
+            
+        //     ))
+
+            // let areas=circle.map((radius)=>(
+            
+            // console.log(Math.floor(Math.PI*radius*radius))
+            // ))
+        // document.getElementById('demo').innerHTML=areas  
+        // console.log(areas);  
+        // let values=[1,2,3,4,5]
+        // for(let i=0;i<values.length;i++){
+        //     console.log('for loop',values[i])
+        // }
+
+        // values.map((item)=>(console.log('map method',item)))
+
+        // for Each
+    //     const fruits=['Apple','Banana','Orange']
+    //    const foreachdata= fruits.forEach((item)=>(
+    //         console.log(item)
+    //     ))
+    //     console.log('forEach',foreachdata)
+    // let mapdata=[]
+    // let mapdata = fruits.map((element)=>{
+    //         console.log(element);
+    //         // return element
+    //     })
+    //   let mapdata = fruits.map((element)=>{
+    //         return element
+    //     })
+        // console.log('mapdata1',mapdata);
+
+
+        // const marks=[12,13,14,15];
+        // const foreachmarks=performance.now()
+        // console.log('foreachmarks',foreachmarks);
+        // marks.forEach(x=>(x+x)*100*400*4567*23434)
+
+        // const foreachmarks1=performance.now()
+        // console.log('foreachmarks1',foreachmarks1);
+
+
+
+        // console.log(`forEach speed test ${foreachmarks1-foreachmarks} in miliseconds`);
+
+        // const marksmap=performance.now();
+        // console.log('marksmap',marksmap);
+        // marks.map(x=>(x+x)*100*400*4567*23434)
+        // const marksmap1=performance.now();
+        // console.log('marksmap1',marksmap1);
+        // console.log(`Map speed test ${marksmap1-marksmap} in miliseconds`);
+            // let a=1;
+            // let b=2;
+            // let c=3;
+            // let d=[1,2,3]
+        // const studentdata={
+        //     name:'Peter',
+        //     uid:18,
+        //     status:'Pass'
+        // }
+        // const studentdata1={
+        //     name:'Thor',
+        //     uid:19,
+        //     status:'Pass'
+        // }
+        // const studentdata2={
+        //     name:'Captain America',
+        //     uid:14,
+        //     status:'Pass'
+        // }
+
+        // filter method
+        let marksAstrophysics=[
+            {name:'Peter', marks:100},
+            {name:'Thor',marks:99.9},
+            {name:'Captain America',marks:99},
+            {name:'Loki', marks:96},
+            {name:'Hulk',marks:97},
+            {name:'Tony Stark',marks:96}
+        ]
+
+        // simple method for filter
+        // let highestmarks=[];
+        //     // console.log(marksAstrophysics.length);
+        // for(let i=0;i<marksAstrophysics.length;i++){
+        //     if(marksAstrophysics[i].marks>96){
+        //         highestmarks.push(marksAstrophysics[i])
+        //     }
+        // }
+
+        // console.log(highestmarks);
+
+
+        // filtermethod 
+        let highestmarks=marksAstrophysics.filter((e)=>{
+            return e.marks>96
+        });
+        console.log('using filter method',highestmarks);
+        </script>
+</body>
+</html>

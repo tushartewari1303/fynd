@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        // example 1
+        // function show(){
+        //     console.log('Inside show function');
+        // }
+        // show();
+
+         // example 2
+        //  const show1=()=>{
+        //     console.log('inside show1 function');
+        //  }
+        //  show1()
+
+        // example 3
+        // function show(a){
+        //     console.log('Inside show function',a);
+        // }
+        // show(12);
+
+        //    const show1=(a)=>{
+        //     console.log('inside show1 function',a);
+        //  }
+        //  show1(11)
+
+
+        // // example-4
+        // let a=12;
+        // a=11;
+            // function display(a){
+            //     console.log(a);
+            // // document.getElementById('demo').innerHTML=`${display(10)}`
+            // return 6
+            // }
+            // // display(11)
+            // // document.getElementById('demo').innerHTML=display(10);
+            // console.log(display(11))
+            //  a=14;
+            // console.log(a);
+            // display();
+
+            // document.getElementById('demo').innerHTML=display(10);
+
+// example-5
+            // a=7;
+
+            // console.log(a);
+            // const outer=()=>{
+            //     let b=11;
+            //     console.log(b,'outer function');
+            //     return 9
+
+            // }
+            // // outer();
+            // console.log(outer());
+
+
+            // example-6
+        //   const a=  function show(){
+        //         console.log('hello');
+        //     }
+        //     a()
+            // show()
+
+
+        //    const b= (function show(){
+        //         console.log('hello guys');
+        //         return 8;
+        //     })()
+            // b
+            // console.log(b());
+            // show()
+            // const a=(data)=>{
+            //     console.log('a arrow function');
+            //     console.log(data);
+
+            // }
+            // function data(){
+            //     console.log('jj');
+            //     return 9;
+            // }
+            //     a(data);
+            // const b= (function show(){
+            //     console.log('hello guys');
+            //     return 8;
+            // })=>{
+
+            // }
+
+
+            // example-8
+            // var a=10;
+            // function first(){
+            //     var b=11;
+            //     function second(){
+            //         var c=12;
+            //         console.log(a,b,c);
+            //     }
+            //     second()
+            // }
+
+            // first()
+
+        //    example-9 
+        // const outer=(c)=>{
+        //     console.log('outer fucntions');
+        //     console.log(c);
+        //     const inner=(a)=>{
+        //         let b=11;
+        //         console.log(a,b);
+        //     }
+        //     return inner;
+        // }
+        //    outer(88)(99)
+        // outer(inner(99)) 
+
+        // example-10
+
+        // const outer=(a)=>{
+        //     console.log('outer function');
+        // }
+        // // outer();
+
+        // a=outer;
+        // b=a;
+        // console.log(b);
+
+
+        // example-11
+        //  const outer=(c)=>{
+        //     // console.log('outer fucntions');
+        //     // console.log(c);
+           
+        //     const inner=(a)=>{
+        //         let b=11;
+        //         console.log(a,b);
+        //     }
+        //     return inner();
+        // }
+        //    outer()
+
+
+        // example-12
+//         const inner = ()=> {
+//     console.log("hello");
+// }
+//     const outer = () => {
+//     return inner()
+// }
+
+// outer(inner()) 
+
+// exampl-13
+// function first() {
+//   var b = 11;
+//   second(b);
+// }
+
+// function second(b) {
+//   var c = 12;
+//   console.log(a, b, c);
+// }
+
+// first();
+
+
+// function n() {
+//     // Local “free” variable that ends up within the closure
+//     var num = 1;
+//     function c() { 
+//       console.log(num);
+//     }
+//     // num++;
+//     return c;
+//   }
+//    n()(); 
+const n=['a','b'];
+console.log(n.push('n'));
+console.log(n);
+n.pop()
+console.log(n);
+
+    </script>
+    
+</body>
+</html> 

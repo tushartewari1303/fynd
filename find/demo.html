@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .nav{
+        background-color: aliceblue;
+        grid-area: nav;
+    }
+    .main{
+        background-color: aqua;
+        grid-area: main;
+    }
+    #sidebar{
+        background-color: aquamarine;
+        grid-area: sidebar;
+    }
+    #footer{
+        background-color: blue;
+        grid-area: footer;
+    }
+    .conat{
+        display: grid;
+        grid-template-areas: 'nav nav nav nav nav'
+        'sidebar main main main main'
+        'sidebar main main main main'
+        'footer footer footer footer footer';
+        height: 100vh;
+        gap: 1px;
+        background-color: black;
+        padding: 10px;
+    }
+    
+</style>
+<body>
+    <div class="conat">
+        <nav class="nav">Navbar</nav>
+        <main class="main">Main</main>
+        <div id="sidebar">Sidebar</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
