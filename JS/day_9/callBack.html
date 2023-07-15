@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Callback in JS</h1>
+    <script>
+
+        // case-1
+        // const funcA=()=>{
+        //     console.log('Hello from function A');
+        // }
+
+        // const funcB=()=>{
+        //     console.log('Hello from function B');
+        // }
+        // funcA();
+        // funcB();
+
+        // case-2
+        // const funcA=()=>{
+        //     setTimeout(() => {
+        //         console.log('Hello from function A');
+        //     }, 3000);
+        // };
+        // const funcB=()=>{
+        //     console.log('Hello from function B');
+        // }
+        // funcA();
+        // funcB();
+
+
+
+        // case-3
+        // function friendcall1(friend) {
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //     }, 3000);
+        // }
+        // function friendcall2() {
+        //     console.log('see i have called you after 3 sec');
+        // }
+
+        // friendcall1();
+        // friendcall2();
+
+
+        // case-4
+        // function friendcall1(friend) {
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //         friendcall2()
+        //     }, 3000);
+        // }
+        // function friendcall2() {
+        //     console.log('see i have called you after 3 sec');
+        // }
+
+        // friendcall1('Peter');
+        // friendcall2();
+
+
+        // case-5
+        // function friendcall1(friend,Callback) {
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //         Callback()
+        //     }, 3000);
+        // }
+        // function friendcall2() {
+        //     console.log('see i have called you after 3 sec');
+        // }
+
+        // friendcall1('Peter',friendcall2());
+
+
+        // case-6
+        function friendcall1(friend,friendcall2=()=>{
+            console.log('see i have called you after 3 sec');
+
+        }) {
+            setTimeout(() => {
+                console.log('i will call you after 3 sec');
+                friendcall2()
+            }, 3000);
+        }
+        
+        friendcall1('Peter');
+    </script>
+</body>
+
+</html>

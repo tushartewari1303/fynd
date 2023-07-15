@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classes in JS</h1>
+    <p id="demo"></p>
+    <script>
+        // object exampl-1
+        // class StudentDetail{
+        //     constructor(){
+        //         console.log('inside constructor',a);
+        //         (function show(){
+        //             console.log('inside constructor show');
+        //         })()
+        //         // show()
+        //         var a=10;
+        //     }
+        //     a=10;
+        //     name='Peter Parker';
+        //     display(){
+        //         console.log('display function');
+        //     }
+        //     a=()=>{
+
+        //     }
+   
+        // }
+        // let s=new StudentDetail();
+        // console.log(s.a);
+        // console.log(s.display());
+
+// object exampl-2
+// var a={
+//     name:'Peter Parker',
+//     uid:48,
+//     designation:'Spider Man'
+// }
+// document.getElementById('demo').innerHTML=a.name;
+// console.log(a);
+
+
+// object exampl-3
+// var book=new Object();
+// book.subject='JS';
+// book.author='Richa Arora';
+// document.getElementById('demo').innerHTML=book.subject;
+
+
+// object exampl-4
+// constructor function
+// function book(title,author){
+//     // this.title=title;
+//     // this.author=author;
+//     this.bookname=title
+
+// }
+// var mybook= new book('js','Richa');
+// document.getElementById('demo').innerHTML=mybook.bookname
+
+
+// example-5 this keyword
+// console.log(this);
+// function show(){
+//     console.log(this);
+// }
+// show()
+
+
+
+// function display(){
+//     var a=9;
+//     function show(){
+//         console.log('the data is',this);
+//     }
+//     show();
+// }
+
+// display()
+
+
+const a={
+    name:'Peter Parker',
+    uis:48,
+    sum:function(){
+        var name='Thor'
+        var add=1+1;
+        console.log('the sum is',add);
+        // console.log(this);
+        console.log(this.name);
+        console.log(name);
+    }
+}
+console.log(a.sum());
+// console.log(a['sum()']);
+
+    </script>
+</body>
+</html>

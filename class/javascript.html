@@ -1,0 +1,163 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"> HEllo this is javascrit</p>
+</body>
+<script >
+    // document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    //document.getElementById("demo").innerHTMl =prompt("I how are you");
+    // document.getElementById("demo").innerHTML=prompt("promt card");
+console.log("hello java script how are you");
+let a=10;
+function show(){
+    console.log(a);
+}
+show();
+
+</script>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        // example 1
+        // function show(){
+        //     console.log('Inside show function');
+        // }
+        // show();
+
+         // example 2
+        //  const show1=()=>{
+        //     console.log('inside show1 function');
+        //  }
+        //  show1()
+
+        // example 3
+        // function show(a){
+        //     console.log('Inside show function',a);
+        // }
+        // show(12);
+
+        //    const show1=(a)=>{
+        //     console.log('inside show1 function',a);
+        //  }
+        //  show1(11)
+
+
+        // // example-4
+        // let a=12;
+        // a=11;
+            // function display(a){
+            //     console.log(a);
+            // // document.getElementById('demo').innerHTML=`${display(10)}`
+            // return 6
+            // }
+            // // display(11)
+            // // document.getElementById('demo').innerHTML=display(10);
+            // console.log(display(11))
+            //  a=14;
+            // console.log(a);
+            // display();
+
+            // document.getElementById('demo').innerHTML=display(10);
+
+// example-5
+            // a=7;
+
+            // console.log(a);
+            // const outer=()=>{
+            //     let b=11;
+            //     console.log(b,'outer function');
+            //     return 9
+
+            // }
+            // // outer();
+            // console.log(outer());
+
+
+            // example-6
+        //   const a=  function show(){
+        //         console.log('hello');
+        //     }
+        //     a()
+            // show()
+
+
+        //    const b= (function show(){
+        //         console.log('hello guys');
+        //         return 8;
+        //     })()
+            // b
+            // console.log(b());
+            // show()
+            // const a=(data)=>{
+            //     console.log('a arrow function');
+            //     console.log(data);
+
+            // }
+            // function data(){
+            //     console.log('jj');
+            //     return 9;
+            // }
+            //     a(data);
+            // const b= (function show(){
+            //     console.log('hello guys');
+            //     return 8;
+            // })=>{
+
+            // }
+
+
+            // example-8
+            // var a=10;
+            // function first(){
+            //     var b=11;
+            //     function second(){
+            //         var c=12;
+            //         console.log(a,b,c);
+            //     }
+            //     return second()
+            // }
+
+            // first()()
+            // var g=10;
+            // let b=()=>function first(){
+            //     var f=11;
+                    
+            //     function second(){
+            //         c=12;
+                    
+            //         console.log(g,f,c)
+            //     }
+            //     second();
+            // }
+            // console.log(b());
+            var g=10;
+            function first(){
+                var b=11;
+                (function second(){
+                    var c=12;
+                    console.log(g,b,c);
+                })()
+                            }
+
+            first()
+            
+           
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        addition(5,function(addres,err){
+            if(!err)
+            {
+                subtraction(addres,function (subres,err){
+                    if(!err)
+                    {
+                        multiplication(subres,function (mulres,err){
+                            if(!err){
+                                divison(mulres,function (divres,err){
+                                    console.log('the result is ',divres);
+
+                                })
+
+                            }
+                        })
+                    }
+                })
+            }
+        })
+        function addition(val,Callback){
+            return Callback(val+5,false)
+        }
+        function subtraction(val,Callback){
+            return Callback(val-3,false)
+        }
+        function multiplication(val,Callback){
+            return Callback(val*5,false)
+        }
+
+        function divison(val,Callback){
+            return Callback(val/7,false)
+        }
+    </script>
+</body>
+</html>

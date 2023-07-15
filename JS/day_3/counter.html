@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter in JS</h1>
+    <!-- <script>
+        // function counter(){
+        //     let counter=0;
+        //     fucn
+        // }
+()
+
+        const outer=()=>{
+            let b=114;
+            console.log('outer');
+            return innerfunction=()=>{
+                sum=b+1;
+                return sum;
+            }
+        }
+        // console.log(outer());
+        // console.log(outer()());
+        let inner=outer();
+        // console.dir(inner)
+        console.log(inner())
+        // inner()
+            </script> -->
+
+<p id="demo">0</p>
+<button onclick="showcountervalue()">Counter</button>
+            <script>
+                const add=(function(){
+                    let count=0;
+                    return function(){
+                        count+=1;
+                        return count;
+                    }
+                })();
+
+                function showcountervalue(){
+                    document.getElementById('demo').innerHTML=add();
+                }
+
+            </script>
+</body>
+</html>

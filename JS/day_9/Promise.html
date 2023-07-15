@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promise in JS</h1>
+    <script>
+        // var mypromise=new Promise(function(resolve,reject){
+        //     const num1=2;
+        //     const num2='2';
+        //     if(num1===num2){
+        //         console.log('number is same');
+        //         resolve();
+        //     }
+        //     else{
+        //         console.log('number is not same');
+        //         reject();
+        //     }
+        // })
+
+        // mypromise.then(()=>console.log('resolved your issue'))
+        // .catch(()=>console.log('rejected'))
+
+
+
+
+        // callback hell in promise
+        // var promise=new Promise(function(resolve,reject){
+        //     resolve(val1,val2)
+        // })
+        //     promise.then(addition(val1,val2)).then(subtraction).then(multiplication).then(divison)
+        //     .then(function(data){
+        //         console.log('result is ',data);
+        //     })
+
+        // function addition(val){
+        //     console.log('val',val);
+        //     console.log('val2',val2);
+        //     return val+val2
+        // }
+        // function subtraction(val){
+        //     console.log(val);
+        //     return val-3
+        // }
+        // function multiplication(val){
+        //     return val*7
+        // }
+        // function divison(val){
+        //     return val/7
+        // }
+
+
+        // async await
+
+// console.log('hello');
+// async function show(){
+//     let a=await 7;
+//     console.log('show function',a);
+// }
+// show()
+// console.log('hello again');
+
+async function show(){
+    try{
+        let a=await addition(5,9)
+    console.log(a);
+    let b=await subtraction(a);
+    console.log('the sub is',b);
+    let c=await multiplication(b)
+    console.log(c);
+    return await divison(c)
+    }
+    catch(e){
+        console.log(e.name);
+    }
+  
+}
+
+//  function show(){
+//     let a= addition(5,9)
+//     console.log(a);
+//     let b= subtraction(a);
+//     console.log(b);
+//     let c= multiplication(b)
+//     console.log(c);
+//     return  divison(c)
+    // let b= subtraction(a);
+    // console.log(b);
+// }
+
+// show().then(data=>console.log('the answer is',data)).catch((e)=>console.log(e))
+// console.log(instanceOf(show));
+
+function display(show){
+    return show() instanceof Promise;
+}
+
+console.log(display(show));
+function addition(val,val2){
+        
+            return val+val2;
+        }
+        // function subtraction(val){
+        //     // console.log(val);
+        //     return  setTimeout(() => {
+                
+        //     }, timeout);
+        //     setTimeout(async () => {
+        //         return await val-3
+        //     }, 2000);
+        //     // return val-3
+        // }
+
+         function subtraction(val){
+            return  setTimeout(async () => {
+                return await val-3
+            }, 2000);
+        }
+        function multiplication(val){
+            return val*7
+        }
+        function divison(val){
+            return val/7
+        }
+
+
+    </script>
+</body>
+</html>

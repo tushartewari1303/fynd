@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods in JS</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        let circle=[10,20,30];
+        // let areas=[];
+        // let area=0;
+        // for(i=0;i<circle.length;i++){
+        //     area=Math.floor(Math.PI*circle[i]*circle[i])
+        //     document.getElementById('demo').innerHTML=area;
+        //     areas.push(area);
+
+        // }
+        // document.getElementById('demo1').innerHTML=areas;
+        // console.log(areas);
+
+            // let areas=circle.map((radius)=>(
+            //     Math.floor(Math.PI*radius*radius)))
+            // document.getElementById('demo1').innerHTML=areas;
+
+
+            // let values=[1,2,3,4,5];
+            // for(let i=0;i<values.length;i++){
+            //     console.log(values[i]);
+            // }
+
+            // values.map((item)=>(console.log(item)))
+
+
+            // forEach
+            const fruits=['Apple','banana','Orange'];
+            // const foreachdata=fruits.forEach((item)=>(
+            //     console.log(item)
+            // ))
+
+            // fruits.forEach((item)=>(
+            //     console.log(item)
+            // ))
+
+            // let mapData=fruits.map((element)=>{
+                 
+            // })
+            // console.log(mapData);
+
+            // let mapData1=fruits.forEach((element)=>{
+                 
+            // })
+            // console.log(mapData1);
+
+
+            // const marks=[12,13,14,15];
+            // console.log(marks.forEach(x=>(x+x)));
+
+            // console.log(marks.map(x=>(x+x)));
+
+            // const marks=[12,13,14,15];
+            // const foreachMarks=performance.now();
+            // // marks.forEach(x=>(x+x)*100*100)
+            // marks.forEach(y=>(y*y)*100*100*35454*554)
+
+            // const foreachMarks1=performance.now();
+            // console.log(`for each speed test ${foreachMarks1-foreachMarks}`);
+
+
+            // const forMap=performance.now();
+            // // marks.map(x=>(x+x)*100*100)
+            // marks.map(y=>(y*y)*100*100*35454*554)
+
+            // const forMap1=performance.now();
+            // console.log(`for map speed test ${forMap1-forMap}`);
+
+
+
+            // filter method in js
+            let marksAstroPhysics=[
+                {name:'Peter',marks:100},
+                {name:'Thor',marks:99},
+                {name:'Dr. Strange',marks:100},
+                {name:'Tony stark',marks:99},
+                {name:'Loki',marks:96},
+                {name:'Hulk',marks:95},
+            ]
+
+            // let highestMarks=[];
+            // for(let i=0;i<marksAstroPhysics.length;i++){
+            //     if(marksAstroPhysics[i].marks>96){
+            //         highestMarks.push(marksAstroPhysics[i])
+            //     }
+            // }
+
+            // console.log(highestMarks);
+
+            let highestMarks1=marksAstroPhysics.filter((e)=>{
+                return e.marks>96
+            })
+            console.log(highestMarks1);
+
+    </script>
+</body>
+</html>
